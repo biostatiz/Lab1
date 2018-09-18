@@ -71,3 +71,6 @@ Then, on terminal input theses commands below:
 	git config —global user.name “(GitHub user name)”
 	git config —global user.email “(Github user email)”
 
+
+
+Reference: http://dasomdevdiary.tistory.com/1
