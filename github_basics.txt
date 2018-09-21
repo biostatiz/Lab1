@@ -23,15 +23,13 @@ origin	https://github.com/biostatiz/Lab1.git (push)
 ————————————————————————————————————————————————————————
 If this shows up, the connection is good.
 
-5. Load the data from github (online) and synchronize it with the local
+5. Load the data from github (online) and synchronize it with the local repo
 
-	git fetch
-	git merge
+	git clone https://github.com/biostatiz/Lab1.git
 
 6. Check the difference
 
 	git diff
-	git branch -a
 	git status
 
 7. Add a file
