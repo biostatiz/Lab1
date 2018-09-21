@@ -29,8 +29,8 @@ library(ggplot2)
 lab2 <- read.csv('lab2.csv')
 ```
 
-1.  Make the data tidy
-2.  Summarize by time and category (mean and standard deviation)
+2.  Make the data tidy
+3.  Summarize by time and category (mean and standard deviation)
 
 ``` r
 temp <- lab2 %>%
@@ -39,7 +39,7 @@ temp <- lab2 %>%
   group_by(time, category) %>% summarise(Mean = mean(case), SD = sd(case))
 ```
 
-1.  Write the R code to recreate the following graph (please note that tick mark labels are changed):
+4.  Write the R code to recreate the following graph (please note that tick mark labels are changed):
 
 ``` r
 pd <- position_dodge(.2)
