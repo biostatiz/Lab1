@@ -21,7 +21,7 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-1.  Download lab2.csv file:
+# 1.  Download lab2.csv file:
 
 -   time: base, first, second
 -   category: sport (sport activity), qol (quality of life), pain
@@ -30,8 +30,8 @@ library(ggplot2)
 lab2 <- read.csv('lab2.csv')
 ```
 
-1.  Make the data tidy
-2.  Summarize by time and category (mean and standard deviation)
+# 2.  Make the data tidy
+# 3.  Summarize by time and category (mean and standard deviation)
 
 ``` r
 temp <- lab2 %>%
@@ -53,7 +53,7 @@ temp %>% head
     ## 5 first qol       69.9  9.06
     ## 6 first sport     77.1  5.36
 
-1.  Write the R code to recreate the following graph (please note that tick mark labels are changed):
+# 4.  Write the R code to recreate the following graph (please note that tick mark labels are changed):
 
 ``` r
 pd <- position_dodge(.2)
