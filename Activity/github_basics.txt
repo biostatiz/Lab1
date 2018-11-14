@@ -1,0 +1,74 @@
+Github Basic Instructions
+
+1. Terminal Command
+	cd documents/github : move to the working directory
+	cd .. : move one level upper in your directory
+	pwd : prints your current working directory
+	ls -Fcal : shows the list of your files in your working directory
+
+2. After moving to the working directory,
+
+	git init
+
+3. Remote origin setup
+
+	git remote add origin https://github.com/biostatiz/Lab1.git
+
+4. Check Remote status
+
+	git remote -v
+————————————————————————————————————————————————————————
+origin	https://github.com/biostatiz/Lab1.git (fetch)
+origin	https://github.com/biostatiz/Lab1.git (push)
+————————————————————————————————————————————————————————
+If this shows up, the connection is good.
+
+5. Load the data from github (online) and synchronize it with the local repo
+
+	git clone https://github.com/biostatiz/Lab1.git
+
+6. Check the difference
+
+	git diff
+	git status
+
+7. Add a file
+
+	git add file1.txt
+	git add file2.txt
+
+8. Check the status again
+	
+	git status
+
+————————————————————————————————————————————————————————
+If there is a file in staging area, there is a red-colored files on the terminal screen.
+If the file was added successfully, there is a green-colored files on the terminal screen.
+————————————————————————————————————————————————————————
+
+9. Add a description.
+	
+	git commit -m “(message)”
+
+10. Push a file
+
+	git push origin master
+
+————————————————————————————————————————————————————————
+Username for 'https://github.com':
+Password for 'https://biostatiz@github.com':
+————————————————————————————————————————————————————————
+
+11. Github Account Setup
+
+If you want to change your GitHub account, go to KEYCHAIN ACCESS on Launchpad
+Remove the current GitHub account.
+
+Then, on terminal input theses commands below:
+	
+	git config —global user.name “(GitHub user name)”
+	git config —global user.email “(Github user email)”
+
+
+
+Reference: http://dasomdevdiary.tistory.com/1
